@@ -1,5 +1,67 @@
+:root {
+  --color-background: #d6d2d2;
+  --color-text--base: #494949;
+  --transition-time: 0.8s;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: 14px;
+  color: var(--color-text--base);
+  background-color: var(--color-background);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 95vw;
+  max-width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  flex: 0 0 10vh;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  flex: 0 0 10vh;
+}
+
+.footer__github {
+  transition: color var(--transition-time) ease 0;
+}
+
+.footer__github,
+.footer__github:active,
+.footer__github:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__rss {
+  display: inline-block;
+  width: 20vw;
+  height: 8vw;
+
+  background: url("./assets/images/svg/rs_school.svg") 0 0 no-repeat;
 }
