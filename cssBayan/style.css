@@ -50,8 +50,9 @@ body {
 
 .footer__github {
   display: inline-block;
-  width: 20vw;
+  width: 22vw;
 
+  white-space: nowrap;
   transition: color var(--transition-time) ease 0;
 }
 
@@ -64,7 +65,7 @@ body {
 
 .footer__rss {
   display: inline-block;
-  width: 20vw;
+  width: 22vw;
   height: 8vw;
 
   background: url("./assets/images/svg/rs_school.svg") 0 0 no-repeat;
