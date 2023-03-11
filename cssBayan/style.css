@@ -1,6 +1,12 @@
 :root {
   --color-background: #d6d2d2;
   --color-text--base: #494949;
+  --color-title: #1d0bc0;
+
+  --font-size--mob: 14px;
+  --font-size--tab: 15px;
+  --font-size--pc: 16px;
+
   --transition-time: 0.8s;
 }
 
@@ -13,7 +19,7 @@ body {
   margin: 0;
 
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: var(--font-size--mob);
   line-height: 1;
   color: var(--color-text--base);
   background-color: var(--color-background);
@@ -67,6 +73,7 @@ img {
 .tab__title {
   margin: 0;
 
+  color: var(--color-title);
   font-size: 1.2em;
 }
 
@@ -88,6 +95,10 @@ img {
 
 .tab__input:checked~.tab__label>.tab__header>.tab__button {
   transform: rotate(45deg);
+}
+
+.tab__input:checked~.tab__label>.tab__header>.tab__title {
+  color: var(--color-text--base);
 }
 
 .tab__image {
@@ -138,4 +149,53 @@ img {
 /* END MOBILE FIRST =========================================================*/
 
 /* TABLET ===================================================================*/
+@media (min-width: 520px) {
+  .tab__image {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 720px) {
+  .tab__image {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: var(--font-size--tab);
+  }
+}
+
+@media (min-width: 820px) {
+  .tab__image {
+    width: 60%;
+  }
+}
+
+@media (min-width: 920px) {
+  .tab__image {
+    width: 50%;
+  }
+}
+
 /* END TABLET ===============================================================*/
+
+/* PC =======================================================================*/
+@media (min-width: 1024px) {
+  body {
+    font-size: var(--font-size--pc);
+  }
+}
+
+@media (min-width: 1200px) {
+  .tab__image {
+    width: 45%;
+  }
+}
+
+/* END PC ===================================================================*/
+
+/* BEHAVIOR */
+/* END BEHAVIOR =============================================================*/
