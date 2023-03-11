@@ -14,9 +14,16 @@ body {
 
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1;
   color: var(--color-text--base);
   background-color: var(--color-background);
 }
+
+img {
+  width: 100%;
+}
+
+/* MOBILE FIRST =============================================================*/
 
 .wrapper {
   display: flex;
@@ -33,10 +40,67 @@ body {
 
 .header {
   flex: 0 0 10vh;
+  padding: 10px 0;
+}
+
+.header__title {
+  margin: 0;
 }
 
 .main {
+  width: 100%;
   flex: 1 1 auto;
+}
+
+.tab__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.tab__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab__title {
+  margin: 0;
+
+  font-size: 1.2em;
+}
+
+.tab__button {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  margin: 0;
+  padding: 0;
+
+  background-color: inherit;
+  background-image: url("./assets/images/svg/plus.svg");
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: 0;
+  transition: var(--transition-time);
+}
+
+.tab__input:checked~.tab__label>.tab__header>.tab__button {
+  transform: rotate(45deg);
+}
+
+.tab__image {
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tab__input:checked~.tab__label>.tab__image {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: var(--transition-time);
 }
 
 .footer {
@@ -70,3 +134,8 @@ body {
 
   background: url("./assets/images/svg/rs_school.svg") 0 0 no-repeat;
 }
+
+/* END MOBILE FIRST =========================================================*/
+
+/* TABLET ===================================================================*/
+/* END TABLET ===============================================================*/
