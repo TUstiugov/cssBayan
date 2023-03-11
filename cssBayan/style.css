@@ -198,4 +198,27 @@ img {
 /* END PC ===================================================================*/
 
 /* BEHAVIOR */
+@media (hover: hover) {
+
+  .tab,
+  .tab * {
+    cursor: pointer;
+  }
+
+  .tab__button {
+    background-image: none;
+  }
+
+  .accordion:hover .tab__button {
+    background-image: url("./assets/images/svg/plus.svg");
+  }
+
+  .tab:hover *~.tab__label>.tab__image {
+    height: auto;
+    visibility: visible;
+    opacity: 1;
+    transition: var(--transition-time);
+  }
+}
+
 /* END BEHAVIOR =============================================================*/
