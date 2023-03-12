@@ -147,7 +147,7 @@ img {
   background: url("./assets/images/svg/rs_school.svg") 0 0 no-repeat;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 26.25rem) {
   .footer__github {
     flex: 0 1 20%;
   }
@@ -157,7 +157,7 @@ img {
   }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 32.5rem) {
   .tab__image {
     width: 80%;
     margin: 0 auto;
@@ -169,7 +169,7 @@ img {
   }
 }
 
-@media (min-width: 620px) {
+@media (min-width: 38.75rem) {
 
   .footer__github,
   .footer__rss {
@@ -177,7 +177,7 @@ img {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 45rem) {
   .tab__image {
     width: 70%;
   }
@@ -186,19 +186,19 @@ img {
 /* END MOBILE FIRST =========================================================*/
 
 /* TABLET ===================================================================*/
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   body {
     font-size: var(--font-size--tab);
   }
 }
 
-@media (min-width: 820px) {
+@media (min-width: 51.25rem) {
   .tab__image {
     width: 60%;
   }
 }
 
-@media (min-width: 920px) {
+@media (min-width: 57.5rem) {
   .tab__image {
     width: 50%;
   }
@@ -212,13 +212,13 @@ img {
 /* END TABLET ===============================================================*/
 
 /* PC =======================================================================*/
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   body {
     font-size: var(--font-size--pc);
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 75rem) {
   .tab__image {
     width: 45%;
   }
