@@ -3,9 +3,9 @@
   --color-text--base: #494949;
   --color-title: #1d0bc0;
 
-  --font-size--mob: 14px;
-  --font-size--tab: 15px;
-  --font-size--pc: 16px;
+  --font-size--mob: 0.8rem;
+  --font-size--tab: 0.9rem;
+  --font-size--pc: 1rem;
 
   --transition-time: 0.5s;
 }
@@ -38,15 +38,15 @@ img {
   align-items: center;
 
   width: 95vw;
-  max-width: 1220px;
+  max-width: 76.25rem;
   min-height: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 0.625rem;
 }
 
 .header {
   flex: 0 0 10vh;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 
 .header__title {
@@ -240,6 +240,10 @@ img {
 
   .accordion:hover .tab__button {
     background-image: url("./assets/images/svg/plus.svg");
+  }
+
+  .accordion:hover .tab__title {
+    color: var(--color-text--base);
   }
 
   .tab:hover *~.tab__label>.tab__image {
