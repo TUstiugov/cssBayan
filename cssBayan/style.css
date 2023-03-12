@@ -105,6 +105,7 @@ img {
   height: 0;
   visibility: hidden;
   opacity: 0;
+  overflow: hidden;
 }
 
 .tab__input:checked~.tab__label>.tab__image {
