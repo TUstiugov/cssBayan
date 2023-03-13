@@ -102,17 +102,17 @@ img {
 }
 
 .tab__image {
-  height: 0;
-  visibility: hidden;
-  opacity: 0;
+  max-height: 0;
+  /* visibility: hidden;
+  opacity: 0; */
   overflow: hidden;
+  transition: var(--transition-time);
 }
 
 .tab__input:checked~.tab__label>.tab__image {
-  height: auto;
-  visibility: visible;
-  opacity: 1;
-  transition: var(--transition-time);
+  max-height: 100vh;
+  /* visibility: visible;
+  opacity: 1; */
 }
 
 .footer {
@@ -247,10 +247,14 @@ img {
   }
 
   .tab:hover *~.tab__label>.tab__image {
-    height: auto;
-    visibility: visible;
+    max-height: 100vh;
+    /* visibility: visible;
     opacity: 1;
-    transition: var(--transition-time);
+    transition: var(--transition-time); */
+  }
+
+  .tab__input:hover~.tab__label>.tab__header>.tab__button {
+    transform: rotate(45deg);
   }
 
   .footer__github,
